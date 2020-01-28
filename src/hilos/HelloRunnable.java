@@ -19,6 +19,8 @@ public class HelloRunnable implements Runnable {
         for(int i=0; i<100;i++){
             try {
                 System.out.println(Thread.currentThread().getName() + " "+ i);
+                // El sleep casi no se usa, aqui se pone para que imprima 
+                //los resultados mas lento.
                 Thread.sleep(1);
             } catch (InterruptedException ex) {
                 Logger.getLogger(HelloThread.class.getName()).log(Level.SEVERE, null, ex);
